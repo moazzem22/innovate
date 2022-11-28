@@ -1,0 +1,1031 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+    width: 100%;
+}
+
+/* ===========================
+            Nav start
+=============================== */
+
+nav{
+    width: 100%;
+    background: rgba(22, 12, 109,.5);
+    position: absolute;
+}
+
+nav .box{
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav .box .logo{
+    width: 15%;
+}
+
+nav .box .navitem{
+    width: 70%;
+}
+
+nav .box .navitem ul{
+    display: flex;
+    column-gap: 42px;
+}
+
+nav .box .navitem ul li{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #EFF4FA;
+    transition: .5s;
+}
+
+nav .box .navitem ul li{
+    position: relative;
+}
+
+nav .box .navitem ul li i{
+    margin-left: 11px;
+}
+
+nav .box .navitem ul li .drop {
+    background: #160C6D;
+    position: absolute;
+    opacity: 0;
+    top: 29px;
+    left: -14px;
+    padding: 10PX 10px;
+    border: 1px solid #fff;
+    transition: .3s;
+    visibility: hidden;
+}
+
+nav .box .navitem ul li .drop ol li{
+    line-height: 28px;
+}
+
+nav .box .navitem ul li:hover .drop{
+    color: #1BBF00;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .box .button{
+    width: 15%;
+}
+
+nav .box .button a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: 1px solid #1BBF00;
+    background: #1BBF00;
+    border-radius: 100px;
+    padding: 14px 28px;
+    transition: .4s;
+}
+
+nav .box .button a:hover{
+    background: transparent;
+    border: 1px solid #1BBF00;
+}
+
+/* ===========================
+            Nav End
+=============================== */
+/* ===========================
+            Banner Start
+=============================== */
+
+.banner{
+    background: url(../images/banner.webp)no-repeat center;
+    background-size: cover;
+}
+
+.banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(107, 98, 197,.9);
+    padding: 230px 0;
+    text-align: center;
+}
+
+.banner .overlay h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 100px;
+    color: #FAFAFE;
+    text-align: center;
+    text-transform: capitalize;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.banner .overlay p{
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #E6E5F3;
+    text-align: center;
+    width: 715px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.banner .overlay a{
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: 1px solid #1BBF00;
+    background: #1BBF00;
+    border-radius: 100px;
+    padding: 14px 28px;
+    transition: .4s;
+    margin: 0 14px;
+}
+
+.banner .overlay a:hover{
+    background: transparent;
+    border: 1px solid #1BBF00;
+}
+
+
+/* ===========================
+            banner End
+=============================== */
+/* ===========================
+            image start
+=============================== */
+
+.image{
+    margin-top: -120px;
+    position: relative;
+    z-index: -1;
+}
+
+.image .element{
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.image .box {
+    column-gap: 30px;
+}
+
+/* ===========================
+            image End
+=============================== */
+/* ===========================
+            Number start
+=============================== */
+.number{
+    background: #f9f9fb;
+}
+.number .box{
+    padding: 100px 0;
+}
+
+.number .box .item{
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.number .box .item:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 132px;
+    background: #4f585f;
+    content: "";
+}
+
+.number .box .item:last-child::after{
+    width: 0;
+}
+
+.number .box .item h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    color: #1BBF00;
+}
+
+.number .box .item p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: capitalize;
+    color: #141135;
+}
+
+/* ===========================
+            Number End
+=============================== */
+/* ===========================
+        Choose start
+=============================== */
+
+.choose{
+    background: #FDFDFD;
+    position: relative;
+}
+
+.choose .element{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.choose .box{
+    padding: 100px 0;
+}
+
+.choose .box .left{
+    width: 60%;
+}
+
+.choose .box .left .item{
+    background: transparent;
+    padding: 42px 103px;
+    position: relative;
+    border-radius: 12px;
+}
+
+.choose .box .left .item:hover{
+    background: #FFFFFF;
+    -webkit-box-shadow: -3px 0px 9px -2px rgba(0,0,0,0.72);
+    -moz-box-shadow: -3px 0px 9px -2px rgba(0,0,0,0.72);
+    box-shadow: -3px 0px 9px -2px rgba(0,0,0,0.72);
+}
+
+.choose .box .left .item .dot1{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #CBC8F0;
+    position: absolute;
+    left: 55px;
+    top: 50px;
+}
+
+.choose .box .left .item .dot2{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #1BBF00;
+    position: absolute;
+    top: 50px;
+    left: 38px;
+}
+
+.choose .box .left .item p{
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: #726E9E;
+    width: 441px;
+}
+
+
+.choose .box .right{
+    width: 40%;
+    margin-left: 110px;
+}
+
+.choose .box .right h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #141135;
+}
+
+.choose .box .right p{
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: #726E9E;
+    width: 393px;
+    margin-top: 10px;
+    margin-bottom: 41px;
+}
+
+.choose .box .right a{
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: 1px solid #1BBF00;
+    background: #1BBF00;
+    border-radius: 100px;
+    padding: 14px 28px;
+    transition: .4s;
+}
+
+.choose .box .right a:hover{
+    background: transparent;
+    border: 1px solid #1BBF00;
+    color: #1BBF00;
+}
+
+
+/* ===========================
+            choose End
+=============================== */
+/* ===========================
+            wedo start
+=============================== */
+
+.wedo {
+    width: 100%;
+    background: #F6F5FF;
+    padding: 100px;
+}
+
+.wedo .box{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.wedo .box .item{
+    width: 32%;
+    border-radius: 20px;
+}
+
+.wedo .box .item .title h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #141135;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.wedo .box .item .title p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #6C7D93;
+    width: 337px;
+    margin-bottom: 56px;
+}
+
+.wedo .box .item .title a{
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: 1px solid #1BBF00;
+    background: #1BBF00;
+    border-radius: 100px;
+    padding: 14px 28px;
+    transition: .4s;
+}
+
+.wedo .box .item .title a:hover{
+    background: transparent;
+    border: 1px solid #1BBF00;
+    color: #1BBF00;
+}
+
+.wedo .box .item .service {
+    text-align: center;
+    border-radius: 20px;
+    transition: .4s;
+    background: #ffff;
+    padding: 48px 0;
+}
+.wedo .box .item .service h4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    transition: .4s;
+}
+
+.wedo .box .item .service p {
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #726E9E;
+    width: 297px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: .4s;
+}
+.wedo .box .item .service a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #141135;
+    position: relative;
+    z-index: 1;
+}
+
+.wedo .box .item .service a:after {
+    position: absolute;
+    top: -5px;
+    right: -17px;
+    width: 27px;
+    height: 40px;
+    content: "";
+    background: #1BBF00;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: -1;
+    transition: .7s;
+}
+
+.wedo .box .item .service:hover{
+    background: #6B62C5;
+}
+.wedo .box .item .service:hover h4{
+    color: #FAFAFE;
+}
+.wedo .box .item .service:hover p{
+    color: #E6E5F3;
+}
+.wedo .box .item .service:hover a{
+    color: #F4F4F5;
+}
+.wedo .box .item .service:hover a::after{
+    width: 136%;
+    border-radius: 100px;
+}
+
+/* ===========================
+            wedo end
+=============================== */
+/* ===========================
+            Impact start
+=============================== */
+
+.impact{
+    background: #FFFFFF;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+
+.impact .tukra{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.impact .title{
+    text-align: center;
+}
+
+.impact .title h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #141135;
+    margin-bottom: 23px;
+}
+
+.impact .title p{
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #726E9E;
+    width: 558px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.impact .box{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.impact .box .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.impact .box .left .analysis{
+    width: 100%;
+    display: flex;
+    column-gap: 35px;
+}
+
+.impact .box .left .analysis h4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #141135;
+}
+
+.impact .box .left .analysis p{
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    width: 343px;
+    margin-top: 20px;
+}
+
+.impact .box .left .research{
+    width: 100%;
+    display: flex;
+    column-gap: 35px;
+}
+
+.impact .box .left .research h4{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #141135;
+}
+
+.impact .box .left .research p{
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    width: 343px;
+    margin-top: 20px;
+}
+
+.impact .box .right{
+    width: 50%;
+}
+
+/* ===========================
+            Impact End
+=============================== */
+/* ===========================
+            Plan start
+=============================== */
+.plan{
+    width: 100%;
+    background: #F9F9FB;
+    padding: 100px 0;
+}
+
+.plan .title{
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.plan .title h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #141135;
+}
+
+.plan .box{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.plan .box .item{
+    width: 31.6%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 60px 0;
+    text-align: center;
+    transition: .4s;
+}
+
+.plan .box .item:hover{
+    background: #6B62C5;
+}
+
+.plan .box .item:hover h5{
+    color: #FAFAFE;
+}
+
+.plan .box .item:hover p{
+    color: #E6E5F3;
+}
+
+.plan .box .item h5{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 26px;
+    transition: .4s;
+}
+
+.plan .box .item h2{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    color: #1BBF00;
+    margin-top: 20px;
+}
+
+.plan .box .item p{
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #726E9E;
+    width: 252px;
+    margin: 0 auto;
+    transition: .4s;
+}
+
+/* ===========================
+            plan End
+=============================== */
+/* ===========================
+            About start
+=============================== */
+
+.about{
+    background: #F9F9FB;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+
+.about .icon {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 480px;
+    left: 270px;
+}
+
+.about .icon i{
+        background: rgba(27, 191, 0,.3);
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 64px;
+        font-size: 25px;
+        transition: .4s;
+        color: #FFFFFF;
+}
+
+.about .icon i:hover{
+    background: #1BBF00;
+    color: #FFFFFF;
+}
+
+.about i.fa-solid.fa-angle-right {
+    margin-left: 1350px;
+}
+
+.about .title{
+    text-align: center;
+    margin-bottom: 152px;
+}
+
+.about .title h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #141135;
+}
+
+.about .boxa{
+    background: #FFFFFF;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    padding: 168px 134px 1px;
+    -webkit-box-shadow: -1px 3px 12px -4px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 3px 12px -4px rgba(0,0,0,1);
+    box-shadow: -1px 3px 12px -4px rgba(0,0,0,1);
+}
+
+.about .boxa .firstimg img {
+    position: absolute;
+    top: -85px;
+    left: 500px;
+    width: 147px;
+    height: 147px;
+    border-radius: 50%;
+    -webkit-box-shadow: -1px 3px 12px -4px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 3px 12px -4px rgba(0,0,0,1);
+    box-shadow: -1px 3px 12px -4px rgba(0,0,0,1);
+}
+
+.about .boxa .secondimg img{
+    position: absolute;
+    top: 85px;
+    left: 520px;
+}
+
+.about .boxa p{
+    font-family: 'Paprika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #726E9E;
+    width: 252px;
+    margin: 0 auto;
+    width: 880px;
+    margin-bottom: 48px;
+}
+
+.about .boxa h6{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 4px;
+}
+/* ===========================
+            About End
+=============================== */
+/* ===========================
+            blog start
+=============================== */
+
+.blog{
+    background: #F9F9FB;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+
+.blog .element{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.blog .title h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 64px;
+    color: #030314;
+}
+
+.blog .arrange{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.blog .arrange .box .item{
+    width: 40%;
+}
+
+.blog .arrange  .box .content{
+    width: 60%;
+}
+
+.blog .arrange .box .content .text h6{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1BBF00;
+    display: inline-block;
+    margin-right: 34px;
+}
+
+.blog .arrange .box .content .text span{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #726E9E;
+}
+
+.blog .arrange .box .content .text{
+    margin-bottom: 16px;
+}
+
+.blog .arrange .box .content .text .one{
+    margin-right: 8px;
+}
+
+.blog .arrange .box .content .text .two{
+    margin-right: 16px;
+}
+
+.blog .arrange .box .content .text .three{
+    margin-right: 12px;
+}
+
+.blog .arrange .box .content .heading h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    margin-bottom: 16px;
+}
+
+.blog .arrange .box .content a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #141135;
+    position: relative;
+    z-index: 1;
+}
+
+.blog .arrange .box .content a:after {
+    position: absolute;
+    top: -5px;
+    right: -17px;
+    width: 27px;
+    height: 40px;
+    content: "";
+    background: #1BBF00;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: -1;
+    transition: .7s;
+}
+
+.blog .arrange .box:hover a::after{
+    width: 136%;
+    border-radius: 100px;
+}
+/* ===========================
+            blog End
+=============================== */
+/* ============================
+contact start
+=============================== */
+
+.contact {
+    padding: 140px 0 70px 0;
+    background: #48409C;
+}
+.contact .box{
+    display: flex;
+}
+.contact .box .logo{
+    width: 40%;
+    height: 300px;
+}
+.contact .box .logo p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    width: 449px;
+    color: #29313D;
+    margin-top: 44px;
+    color: #FEFEFE;
+}
+.contact .box .Features{
+    width: 20%;
+}
+.contact .box .Features h4{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 48px;
+    color: #FEFEFE;
+}
+.contact .box .Features ul li{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #FEFEFE;
+}
+.contact .box .Products{
+    width: 20%;
+}
+.contact .box .Products h4{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 48px;
+    color: #FEFEFE;
+}
+.contact .box .Products ul li{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #FEFEFE;
+}
+.contact .box .Support{
+    width: 20%;
+}
+.contact .box .Support h4{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 48px;
+    color: #FEFEFE;
+}
+.contact .box .Support ul li{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #FEFEFE;
+}
+/* ============================
+contact start
+=============================== */
+/* ============================
+Footer start
+=============================== */
+footer{
+    padding-bottom: 57px;
+    background: #48409C;
+}
+footer .box{
+    width: 100%;
+    display: flex;
+}
+footer .box .leftpart{
+    width: 80%;
+}
+footer .box .leftpart p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+}
+footer .box .rightpart{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .box .rightpart span{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FEFEFE;
+}
+
+/* ============================
+Footer End
+=============================== */
